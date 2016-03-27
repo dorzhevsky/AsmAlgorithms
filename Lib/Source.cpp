@@ -26,4 +26,11 @@ void ComputeLeastSquareRoots(const double* x, const double* y, int len, double* 
 	ComputeLeastSquareRoots_(x, y, len, m, b);
 }
 
+extern "C" void RectToSpherical_(double x, double y, double z, double* r, double* phi, double* teta);
+void RectToSpherical(double x, double y, double z, double* r, double* phi, double* teta)
+{
+	RectToSpherical_(x, y, z, r, phi, teta);
+}
+
+
 

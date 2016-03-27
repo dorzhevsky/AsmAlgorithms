@@ -40,6 +40,9 @@
     <MASM Include="LeastSquareRoots.asm">
       <Filter>Source Files</Filter>
     </MASM>
+    <MASM Include="RectToSpherical.asm">
+      <Filter>Source Files</Filter>
+    </MASM>
   </ItemGroup>
   <ItemGroup>
     <None Include="PData.inc">

@@ -160,6 +160,7 @@
   <ItemGroup>
     <MASM Include="LeastSquareRoots.asm" />
     <MASM Include="Parallelogram.asm" />
+    <MASM Include="RectToSpherical.asm" />
     <MASM Include="SphereSurfaceVolume.asm" />
     <MASM Include="Min.asm" />
   </ItemGroup>
