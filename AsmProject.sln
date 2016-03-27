@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PInvoke", "PInvokeTest\PInv
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Lib", "Lib\Lib.vcxproj", "{46EE0185-BA0A-42A9-A194-C2FBB15D974E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Console", "ConsoleTest\ConsoleTest.vcxproj", "{FBD0612C-CE3C-4FF7-92BD-A5989B906B60}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Console", "Console\ConsoleTest.vcxproj", "{FBD0612C-CE3C-4FF7-92BD-A5989B906B60}"
 	ProjectSection(ProjectDependencies) = postProject
 		{46EE0185-BA0A-42A9-A194-C2FBB15D974E} = {46EE0185-BA0A-42A9-A194-C2FBB15D974E}
 	EndProjectSection
