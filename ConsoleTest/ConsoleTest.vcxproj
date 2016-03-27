@@ -22,6 +22,7 @@
     <ProjectGuid>{FBD0612C-CE3C-4FF7-92BD-A5989B906B60}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>ConsoleTest</RootNamespace>
+    <ProjectName>Console</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
