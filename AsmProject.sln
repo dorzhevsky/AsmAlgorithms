@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PInvoke", "PInvokeTest\PInvoke.csproj", "{AAC27581-ECF1-4055-BB40-D72295061C37}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PInvoke", "PInvoke\PInvoke.csproj", "{AAC27581-ECF1-4055-BB40-D72295061C37}"
 	ProjectSection(ProjectDependencies) = postProject
 		{46EE0185-BA0A-42A9-A194-C2FBB15D974E} = {46EE0185-BA0A-42A9-A194-C2FBB15D974E}
 	EndProjectSection
