@@ -13,11 +13,22 @@ namespace Tests
 	{
 	public:
 		
+		TEST_METHOD(ShouldComputeRectToSphericalWhenRIsZero)
+		{
+			double x = 0, y = 0, z = 0;
+			double r,phi, theta;
+			RectToSpherical(x,y,z, &r, &phi, &theta);
+
+			Assert::AreEqual(0, r, 0.001);
+			Assert::AreEqual(0, phi, 0.001);
+			Assert::AreEqual(0, theta, 0.001);
+		}
+
 		TEST_METHOD(ShouldComputeR)
 		{
 			double x = 1, y = 2, z = 3;
-			double r,phi, teta;
-			RectToSpherical(x,y,z, &r, &phi, &teta);
+			double r,phi, theta;
+			RectToSpherical(x,y,z, &r, &phi, &theta);
 
 			Assert::AreEqual(sqrt(x*x + y*y + z*z), r, 0.001);
 		}
@@ -25,19 +36,19 @@ namespace Tests
 		TEST_METHOD(ShouldComputePhi)
 		{
 			double x = 1, y = 2, z = 3;
-			double r,phi, teta;
-			RectToSpherical(x,y,z, &r, &phi, &teta);
+			double r,phi, theta;
+			RectToSpherical(x,y,z, &r, &phi, &theta);
 
-			Assert::AreEqual(atan(M_PI*(y/x)/180.0), phi, 0.001);
+			Assert::AreEqual(atan((y/x)), phi, 0.001);
 		}
 
-		TEST_METHOD(ShouldComputeTeta)
+		TEST_METHOD(ShouldComputeTheta)
 		{
 			double x = 1, y = 2, z = 3;
-			double r,phi, teta;
-			RectToSpherical(x,y,z, &r, &phi, &teta);
+			double r,phi, theta;
+			RectToSpherical(x,y,z, &r, &phi, &theta);
 
-			Assert::AreEqual(acos(M_PI*z/sqrt(x*x + y*y + z*z)/180.0), teta, 0.001);
+			Assert::AreEqual(acos(z/sqrt(x*x + y*y + z*z)), theta, 0.001);
 		}
 	};
 }
