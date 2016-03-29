@@ -45,7 +45,7 @@ mov eax, [ebp + 32]
 vmovsd real8 ptr [eax], xmm1			;r = xmm1
 
 vxorpd xmm0, xmm0, xmm0
-comisd xmm1, xmm0						;Проверяем, что r > 0
+vcomisd xmm1, xmm0						;Проверяем, что r > 0
 jbe RZero
 
 ;Вычисляем phi
