@@ -32,5 +32,10 @@ void RectToSpherical(double x, double y, double z, double* r, double* phi, doubl
 	RectToSpherical_(x, y, z, r, phi, teta);
 }
 
+extern "C" void SphericalToRect_(double r, double phi, double theta, double* x, double* y, double* z);
+void SphericalToRect(double r, double phi, double theta, double* x, double* y, double* z)
+{
+	SphericalToRect_(r, phi, theta, x, y, z);
+}
 
 

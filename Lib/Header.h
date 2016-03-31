@@ -24,6 +24,7 @@ _declspec(dllexport) __int32 SphereSufraceVolume(float r, float* a, float* v);
 _declspec(dllexport) bool ComputeParallelogramMetrics(PDATA* pdata);
 _declspec(dllexport) void ComputeLeastSquareRoots(const double* x, const double* y, int n, double* m, double* b);
 _declspec(dllexport) void RectToSpherical(double x, double y, double z, double* r, double* phi, double* teta);
+_declspec(dllexport) void SphericalToRect(double r, double phi, double theta, double* x, double* y, double* z);
 
 
 #ifdef __cplusplus

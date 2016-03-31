@@ -163,6 +163,7 @@
     <MASM Include="RectToSpherical.asm" />
     <MASM Include="SphereSurfaceVolume.asm" />
     <MASM Include="Min.asm" />
+    <MASM Include="SphericalToRect.asm" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
