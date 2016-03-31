@@ -22,11 +22,7 @@ SphericalToRect_ proc
 push ebp
 mov ebp, esp
 
-sub esp, 8								;Память под cos(phi)
-sub esp, 8								;Память под sin(theta)
-sub esp, 8								;Память под sin(phi)
-sub esp, 8								;Память под cos(theta)
-sub esp, 8								;Память под аргументы sin и cos
+sub esp,40
 
 ;Вычисляем cos(phi)
 vmovsd xmm0, real8 ptr [ebp + 16]		;xmm0 - phi
