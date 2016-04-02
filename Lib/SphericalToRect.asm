@@ -2,6 +2,7 @@
 
 ;Функции определены во внешней библиотеке
 extern sin:proc, cos:proc
+extern DegToRad:real8
 
 .const
 Pi real8 3.141592653589793238462643383
@@ -26,6 +27,7 @@ sub esp,40
 
 ;Вычисляем cos(phi)
 vmovsd xmm0, real8 ptr [ebp + 16]		;xmm0 - phi
+vmulsd xmm0, xmm0, [DegToRad]
 vmovsd real8 ptr [esp], xmm0
 call cos
 fstp real8 ptr [ebp - 8]					;cos(phi)
@@ -35,6 +37,7 @@ fstp real8 ptr [ebp - 24]				;sin(phi)
 
 ;Вычисляем cos(theta)
 vmovsd xmm0, real8 ptr [ebp + 24]		;xmm0 - theta
+vmulsd xmm0, xmm0, [DegToRad]
 vmovsd real8 ptr [esp], xmm0
 call cos
 fstp real8 ptr [ebp - 32]				;cos(theta)
